@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="bg-animate" id="bg-animate"></div>
         <div class="curved" id="curved"></div>
 
         <div class="form-wrapper sign-in">
@@ -27,7 +28,7 @@
                 </div>
                 <button type="submit">Sign In</button>
                 <div class="sign-link">
-                    <p>Don't have an account? <a href="">Sign Up</a></p>
+                    <p>Don't have an account? <a href="#" onclick="activeSignUp()">Sign Up</a></p>
                 </div>
                 <div class="social-platform">
                     <p>Or sign in with</p>
@@ -57,18 +58,18 @@
                 </div>
                 <button type="submit">Sign Up</button>
                 <div class="sign-link">
-                    <p>Already have an account? <a href="">Sign In</a></p>
+                    <p>Already have an account? <a href="#" onclick="activeSignIn()">Sign In</a></p>
                 </div>
             </form>
         </div>
     </div>
 
     <div class="colors">
-        <span class="color" style="--clr:#77dd77;"></span>
-        <span class="color" style="--clr:#f67599;"></span>
-        <span class="color active" style="--clr:#976ed7;"></span>
-        <span class="color" style="--clr:#1db9c3;"></span>
-        <span class="color" style="--clr:#ffb347;"></span>
+        <span onclick="changeColor('#77dd77')" class="color" style="--clr:#77dd77;"></span>
+        <span onclick="changeColor('#f67599')" class="color" style="--clr:#f67599;"></span>
+        <span onclick="changeColor('#976ed7')" class="color active" style="--clr:#976ed7;"></span>
+        <span onclick="changeColor('#1db9c3')" class="color" style="--clr:#1db9c3;"></span>
+        <span onclick="changeColor('#ffb347')" class="color" style="--clr:#ffb347;"></span>
     </div>
 
     <script src="script.js"></script>
