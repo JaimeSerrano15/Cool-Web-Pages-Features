@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="curved" id="curved"></div>
+
         <div class="form-wrapper sign-in">
             <form action="">
                 <h2>Sign In</h2>
@@ -37,7 +39,38 @@
                 </div>
             </form>
         </div>
+
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                    <input type="text" name="" id="" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="" id="" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="" id="" required>
+                    <label for="">Password</label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="">Sign In</a></p>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <div class="colors">
+        <span class="color" style="--clr:#77dd77;"></span>
+        <span class="color" style="--clr:#f67599;"></span>
+        <span class="color active" style="--clr:#976ed7;"></span>
+        <span class="color" style="--clr:#1db9c3;"></span>
+        <span class="color" style="--clr:#ffb347;"></span>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
